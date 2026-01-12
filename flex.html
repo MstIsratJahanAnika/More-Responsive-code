@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex</title>
+    <style>
+        .box-container{
+            display: flex;
+        }
+        .box{
+            background-color: bisque;
+            border-radius: 10px;
+            padding: 20px;
+            color: brown;
+        }
+
+        .items{
+            width: 100px;
+            padding: 10px;
+            background-color: aquamarine;
+        }
+        .item-container{
+            gap: 30px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        @media screen and (max-width:576px) {
+            .box-container{
+                flex-direction: column;
+            }
+            .box{
+                background-color: brown;
+                color: bisque;
+            }
+
+            .items{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Lets Explore Flex</h2>
+    <div class="box-container">
+        <div class="box">
+            <h3>Box-1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio perspiciatis, nemo ipsa porro incidunt eos
+                nulla eum? Perspiciatis consequatur recusandae tempora rerum dicta iusto numquam vitae mollitia
+                voluptates, aperiam dolores unde libero fugit obcaecati placeat laudantium odio. Harum illum quis
+                quaerat reprehenderit in perferendis aliquid cupiditate, odio asperiores, quod, sed distinctio
+                exercitationem est voluptas alias atque! Vel consequatur beatae nostrum.
+            </p>
+        </div>
+        <div class="box">
+            <h3>Box-2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio perspiciatis, nemo ipsa porro incidunt eos
+                nulla eum? Perspiciatis consequatur recusandae tempora rerum dicta iusto numquam vitae mollitia
+                voluptates, aperiam dolores unde libero fugit obcaecati placeat laudantium odio. Harum illum quis
+                quaerat reprehenderit in perferendis aliquid cupiditate, odio asperiores, quod, sed distinctio
+                exercitationem est voluptas alias atque! Vel consequatur beatae nostrum.
+            </p>
+        </div>
+    </div>
+
+    <!-- .box-container-2>.items*20{Box-$} -->
+    <div class="item-container">
+        <div class="items">Box1</div>
+        <div class="items">Box2</div>
+        <div class="items">Box3</div>
+        <div class="items">Box4</div>
+        <div class="items">Box5</div>
+        <div class="items">Box6</div>
+        <div class="items">Box7</div>
+        <div class="items">Box8</div>
+        <div class="items">Box9</div>
+        <div class="items">Box10</div>
+        <div class="items">Box11</div>
+        <div class="items">Box12</div>
+        <div class="items">Box13</div>
+        <div class="items">Box14</div>
+        <div class="items">Box15</div>
+        <div class="items">Box16</div>
+        <div class="items">Box17</div>
+        <div class="items">Box18</div>
+        <div class="items">Box19</div>
+        <div class="items">Box20</div>
+    </div>
+</body>
+
+</html>
